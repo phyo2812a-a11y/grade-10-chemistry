@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Matter and Solution</title>
+    
+</head>
+<body>
+   <nav>
+        <img src="side logo.jpg" alt="" class="site-logo">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li class="submenu">
+                <a href="">Lesson</a>
+                <ul class="submenu-item">
+                    <li><a href="/ICT/Lesson/lesson.html">Lesson</a></li>
+                    <li><a href="">Video Lesson</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="/ICT/Quiz/mc.html">Quiz</a>
+                    <ul class="submenu-item">
+                        <li><a href="/ICT/Quiz/mc.html">Multiple Choice</a></li>
+                        <li><a href="/ICT/Quiz/blank.html">Blank</a></li>
+                    </ul>
+            </li>
+            <li><a href="/ai2.html">Ai</a></li>
+            
+            <li><a href="/ICT/about/about.html">About Us</a></li>
+            <li class="submenu">
+                <a href="">Reference</a>
+                    <ul class="submenu-item">
+                        <li><a href="/ICT/Material/material.html">Materials</a></li>
+                        <li><a href="/ICT/Material/T and d.html">T and D</a></li>
+                        <li><a href="/ICT/Material/User.html">User Guides</a></li>
+                    </ul>
+            </li>
+            <li>
+                <button type="button" class="pdf-btn" onclick="openPdfModal()">📚 Textbook PDF</button>
+            </li>
+            <li>
+            <div class="searchbox">
+                <input type="text" id="input" placeholder="Search">
+                <button id="searchbutton">Search</button>
+            </div>
+        </li>
+        </ul>
+    </nav>
+    
+    <div class="pdf-modal" id="pdfModal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3 class="pdf-modal-title">Chapter 2: Matter and Solutions - Textbook PDF</h3>
+                <button type="button" class="pdf-close-btn" onclick="closePdfModal()">✕ Close</button>
+            </div>
+            <div class="pdf-iframe-container">
+                <iframe id="pdfFrame" src="" title="Textbook PDF Viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <main id="content" class="scrollpanel">
+        <section id="Home" class="panel home-panel">
+             <video class="lesson-video" autoplay muted loop playsinline>
+                <source src="v2.mp4" type="video/mp4">
+            </video>
+            <div class="home-container">
+                <div class="home-text">
+                    <span class="home-label">CHEMISTRY LEARNING</span>
+                    <h1>Matter and <span>Solution</span></h1>
+                   
+                    <div class="home-buttons fadeleft">
+                        <a href="#Lesson" class="start-btn">Start Learning →</a>
+                        <a href="#Quiz" class="explore-btn">Take Quiz</a>
+                    </div>
+
+                    <div class="home-extra-images">
+                        <div class="image-box image-extra-one">
+                            <img src="MCF.jpg" alt="Molecular Structure">
+                        </div>
+                        <div class="image-box image-extra-two">
+                            <img src="education.png" alt="Chemical Reaction Test">
+                        </div>
+                          <div class="image-box image-extra-two">
+                            <img src="MCEA.jpg" alt="Chemical Reaction Test">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-image">
+                    <div class="image-box image-one">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800" alt="Chemistry Laboratory">
+                    </div>
+                    <div class="image-box image-two">
+                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=800" alt="Chemistry Experiment">
+                    </div>
+                    <div class="image-box image-three">
+                        <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=800" alt="Science Equipment">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="Lesson" class="panel lesson-panel">
+            <video class="lesson-video" autoplay muted loop playsinline>
+                <source src="chemistry-bg.mp4.mp4" type="video/mp4">
+            </video>
+            <div class="lesson-overlay"></div>
+            <div class="content">
+                <div class="title">
+                    <h1>Our Lessons</h1>
+                    <p>Explore and Learn Chemistry</p>
+                </div>
+                <div class="lesson-cards-container">
+                    <div class="lesson-card fadeup">
+                        <h3>States of Matter</h3>
+                        <p>Explore the fundamental states of matter: solid, liquid, gas, and plasma, along with their molecular behaviors.</p>
+                        <a href="ICT/Lesson/lesson.html" class="lesson-btn">Start Lesson →</a>
+                    </div>
+                    <div class="lesson-card fadeup">
+                        <h3>Solutions & Mixtures</h3>
+                        <p>Learn about solutes, solvents, concentrations, and how different mixtures and solutions are formed.</p>
+                        <a href="#" class="lesson-btn">Start Video Lesson →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Quiz" class="panel quiz-panel"> 
+            <video class="quiz-video" autoplay muted loop playsinline>
+                <source src="v2.mp4.mp4" type="video/mp4">
+            </video>
+            <div class="quiz-overlay"></div>
+            <div class="content">
+                <div class="title animated-fadeup">
+                    <h1>Questions & Answers</h1>
+                </div>
+                <div class="qa-container">
+                    <div class="qa-card fadeup">
+                        <div>
+                            <span class="qa-badge">Matter</span>
+                            <h3>Multiple Choice</h3>
+                            
+                        </div>
+                        <a href="/ICT/Quiz/mc.html" class="qa-btn">Read Explanation</a>
+                    </div>
+                    <div class="qa-card fadeup">
+                        <div>
+                            <span class="qa-badge">Solutions</span>
+                            <h3>Blank</h3>
+                           
+                        </div>
+                        <a href="/ICT/Quiz/blank.html" class="qa-btn">Read Explanation</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section id="About" class="panel about-panel"> 
+            <video class="about-video" autoplay muted loop playsinline>
+                <source src="v1.mp4.mp4" type="video/mp4">
+            </video>
+            <div class="about-overlay"></div>
+            <div class="content">
+                <div class="title animated-fadeup">
+                    <h1>About Us</h1>
+                    <p>Empowering Students Through Interactive Chemistry</p>
+                </div>
+                
+                <div class="about-single-card fadeup">
+                    <div class="about-card-img-box">
+                        <img src="msgh.jpg" alt="About Our Chemistry Project">
+                    </div>
+                    <div class="about-card-content">
+                        <span class="about-badge">Our Mission</span>
+                        <h3>Building Interactive Learning Tools</h3>
+                        <p>
+                            Matter and Solution is designed to simplify complex chemistry concepts for high school students. 
+                            Through visual models, interactive quizzes, and structured lesson catalogs, we aim to make learning chemistry intuitive, practical, and engaging.
+                        </p>
+                        <a href="/ICT/about/about.html" class="about-btn">Explore Lessons →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Project" class="panel project-panel"> 
+            <div class="project-bg-shape bg-shape-1"></div>
+            <div class="project-bg-shape bg-shape-2"></div>
+
+            <div class="content">
+                <div class="title animated-fadeup">
+                    <h1>Materials</h1>
+                </div>
+                <p class="project-subtitle">Explore key technical assets, documentation, and tools supporting this project</p>
+
+                <div class="materials-grid">
+                
+                    <div class="mat-card fadeup">
+                        <div class="mat-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Software and Hardware">
+                            <span class="mat-card-badge">Tech Stack</span>
+                        </div>
+                        <div class="mat-card-body">
+                            <h3>Software and Hardware</h3>
+                            <a href="/ICT/Material/material.html" class="mat-btn">
+                                <span>View Specs</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="mat-card fadeup">
+                        <div class="mat-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600" alt="Timeline">
+                            <span class="mat-card-badge">Roadmap</span>
+                        </div>
+                        <div class="mat-card-body">
+                            <h3>Timeline</h3>
+                            <a href="#" class="mat-btn">
+                                <span>Check Schedule</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+                    <div class="mat-card fadeup">
+                        <div class="mat-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=600" alt="User Guides">
+                            <span class="mat-card-badge">Docs</span>
+                        </div>
+                        <div class="mat-card-body">
+                            <h3>User Guides</h3>
+                            <a href="#" class="mat-btn">
+                                <span>Read Manual</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div>
+                <p class="footer-eyebrow">GRADE 10 <span aria-hidden="true">&middot;</span> CHEMISTRY</p>
+                <h2>Matter <span>&amp;</span> Solutions</h2>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="/ICT/Lesson/lesson.html">Lesson</a>
+                <a href="/ICT/Quiz/quiz.html">Quiz</a>
+                <a href="/ICT/Ai/ai.html">AI</a>
+                <a href="/ICT/About/about.html">About Us</a>
+                <a href="/ICT/Reference/reference.html">Reference</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <span>G 10 Chemistry</span>
+            <span>Matter and Solutions</span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

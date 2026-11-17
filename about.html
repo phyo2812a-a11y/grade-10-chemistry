@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+
+<link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+  <nav>
+        <img src="side logo.jpg" alt="" class="site-logo">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li class="submenu">
+                <a href="">Lesson</a>
+                <ul class="submenu-item">
+                    <li><a href="/ICT/Lesson/lesson.html">Lesson</a></li>
+                    <li><a href="">Video Lesson</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="/ICT/Quiz/mc.html">Quiz</a>
+                    <ul class="submenu-item">
+                        <li><a href="/ICT/Quiz/mc.html">Multiple Choice</a></li>
+                        <li><a href="/ICT/Quiz/blank.html">Blank</a></li>
+                    </ul>
+            </li>
+            <li><a href="/ai2.html">Ai</a></li>
+            
+            <li><a href="/ICT/about/about.html">About Us</a></li>
+            <li class="submenu">
+                <a href="">Reference</a>
+                    <ul class="submenu-item">
+                        <li><a href="/ICT/Material/material.html">Materials</a></li>
+                        <li><a href="/ICT/Material/T and d.html">T and D</a></li>
+                        <li><a href="/ICT/Material/User.html">User Guides</a></li>
+                    </ul>
+            </li>
+            <li>
+                <button type="button" class="pdf-btn" onclick="openPdfModal()">📚 Textbook PDF</button>
+            </li>
+            <li>
+            <div class="searchbox">
+                <input type="text" id="input" placeholder="Search">
+                <button id="searchbutton">Search</button>
+            </div>
+        </li>
+        </ul>
+    </nav>
+    
+    <div class="pdf-modal" id="pdfModal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3 class="pdf-modal-title">Chapter 2: Matter and Solutions - Textbook PDF</h3>
+                <button type="button" class="pdf-close-btn" onclick="closePdfModal()">✕ Close</button>
+            </div>
+            <div class="pdf-iframe-container">
+                <iframe id="pdfFrame" src="" title="Textbook PDF Viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+<main id="content">
+    <section class="hero" id="home">
+
+    <video autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+
+    <div class="hero-content">
+        <h1>ABOUT <span>US</span></h1>
+
+        
+
+        <a href="#about">Explore More</a>
+    </div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+   
+
+    <div id="team">
+
+      
+        <div class="profile">
+
+            <img src="p4.jpg" alt="Person 1">
+
+            <div class="profile-info">
+                
+               <p>Hello! My name is Maung Wai Hlyan Phyo. I am the eldest son of U Thet Ho and Daw Zin Mar Cho. I am currently a Grade 10 student at Maha Shwe Gon Htoo Private High School, where I have studied since Grade 6.
+I enjoy discovering new knowledge and learning new things. I am also interested in sports and technology. I always try to learn from new experiences and improve my abilities.</p>
+                <button type="button" class="certificate-btn" onclick="openCertificateModal()">🏅 View My Certificate</button>
+               
+            </div>
+
+        </div>
+
+
+    
+        <div class="profile">
+
+            <img src="p5.jpg" alt="Person 2">
+
+            <div class="profile-info">
+                
+              <p>Hello! My name is May Yoon Nadi Hlaing, and I am 16 years old. I am the youngest daughter of U Aye Shwe and Daw San Myint. I am currently a Grade 10 student at Maha Shwe Gon Htoo Private High School. I have been studying at this school since Grade 6, and this is my fifth year here.
+I am a person who enjoys learning new things and exploring new ideas. I am also interested in technology and enjoy learning about computers in my free time. In the future, I hope to continue learning, achieve my goals, and become a successful person.</p>
+             
+            </div>
+
+        </div>
+
+
+   
+        <div class="profile">
+
+            <img src="p1.jpg" alt="Person 3">
+
+            <div class="profile-info">
+             
+                <h3>U Zaw Nyunt</h3>
+                <h4></h4>
+
+               
+            </div>
+
+        </div>
+
+
+      
+        <div class="profile">
+
+            <img src="p3.jpg" alt="Person 4">
+
+            <div class="profile-info">
+              
+                <h3>Daw Phyu Phyu Shein</h3>
+                <h4></h4>
+
+              
+            </div>
+
+        </div>
+
+
+  
+        <div class="profile">
+
+            <img src="p2.jpg" alt="Person 5">
+
+            <div class="profile-info">
+               
+                <h3>U Chan Myae Zaw</h3>
+                <h4>B.C.Sc, kmdX Dawei</h4>
+            </div>
+
+        </div>
+
+
+      
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/500?img=48" alt="Person 6">
+
+            <div class="profile-info">
+                <span class="number">06 / OUR FUTURE</span>
+                <h3>Daw Nu NU War</h3>
+                <h4></h4>
+
+             
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="certificate-modal" id="certificateModal" aria-hidden="true">
+    <div class="certificate-modal-content" role="dialog" aria-modal="true" aria-labelledby="certificateTitle">
+        <div class="certificate-modal-header">
+            <h2 id="certificateTitle">My Certificate</h2>
+            <button type="button" class="certificate-close-btn" onclick="closeCertificateModal()" aria-label="Close certificate">✕</button>
+        </div>
+        <div class="certificate-image-wrap">
+            <img src="Certificate.png" alt="My certificate">
+        </div>
+    </div>
+</div>
+</main>
+
+
+<script src="search.js"></script>
+<script>
+    function openPdfModal() {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfFrame');
+            iframe.src = 'tb.pdf';
+            modal.classList.add('active');
+        }
+
+        function closePdfModal() {
+            const modal = document.getElementById('pdfModal');
+            const iframe = document.getElementById('pdfFrame');
+            modal.classList.remove('active');
+            iframe.src = '';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target === modal) {
+                closePdfModal();
+            }
+        }
+function openCertificateModal() {
+    const modal = document.getElementById("certificateModal");
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+}
+function closeCertificateModal() {
+    const modal = document.getElementById("certificateModal");
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+}
+document.getElementById("certificateModal").addEventListener("click", function(event) {
+    if (event.target === this) closeCertificateModal();
+});
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") closeCertificateModal();
+});
+</script>
+
+<footer>
+    <p>© 2026 <span>About Us.</span> All Rights Reserved.</p>
+    <p>Designed with Creativity and Passion.</p>
+</footer>
+
+</body>
+</html>
